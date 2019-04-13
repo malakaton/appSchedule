@@ -10,3 +10,4 @@ ec9384,127.0.0.1,GET,http://appschedule.host/app_dev.php/_configurator/step/1,15
 2ab4ef,127.0.0.1,POST,http://appschedule.host/app_dev.php/_configurator/step/1,1555174166,
 65f688,127.0.0.1,GET,http://appschedule.host/app_dev.php/_configurator/final,1555174166,
 160ae1,127.0.0.1,GET,http://appschedule.host/app_dev.php/,1555174207,
+6cc51b,127.0.0.1,GET,http://appschedule.host/app_dev.php/,1555174674,
