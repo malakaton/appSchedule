@@ -120,9 +120,88 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // schedule_workout_default_index
-        if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'schedule_workout_default_index')), array (  '_controller' => 'Schedule\\WorkoutBundle\\Controller\\DefaultController::indexAction',));
+        if (0 === strpos($pathinfo, '/workout')) {
+            // workoutcrud
+            if (rtrim($pathinfo, '/') === '/workout') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_workoutcrud;
+                }
+
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'workoutcrud');
+                }
+
+                return array (  '_controller' => 'Schedule\\WorkoutBundle\\Controller\\WorkoutController::indexAction',  '_route' => 'workoutcrud',);
+            }
+            not_workoutcrud:
+
+            // workoutcrud_create
+            if ($pathinfo === '/workout/') {
+                if ($this->context->getMethod() != 'POST') {
+                    $allow[] = 'POST';
+                    goto not_workoutcrud_create;
+                }
+
+                return array (  '_controller' => 'Schedule\\WorkoutBundle\\Controller\\WorkoutController::createAction',  '_route' => 'workoutcrud_create',);
+            }
+            not_workoutcrud_create:
+
+            // workoutcrud_new
+            if ($pathinfo === '/workout/new') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_workoutcrud_new;
+                }
+
+                return array (  '_controller' => 'Schedule\\WorkoutBundle\\Controller\\WorkoutController::newAction',  '_route' => 'workoutcrud_new',);
+            }
+            not_workoutcrud_new:
+
+            // workoutcrud_show
+            if (preg_match('#^/workout/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_workoutcrud_show;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'workoutcrud_show')), array (  '_controller' => 'Schedule\\WorkoutBundle\\Controller\\WorkoutController::showAction',));
+            }
+            not_workoutcrud_show:
+
+            // workoutcrud_edit
+            if (preg_match('#^/workout/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_workoutcrud_edit;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'workoutcrud_edit')), array (  '_controller' => 'Schedule\\WorkoutBundle\\Controller\\WorkoutController::editAction',));
+            }
+            not_workoutcrud_edit:
+
+            // workoutcrud_update
+            if (preg_match('#^/workout/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                if ($this->context->getMethod() != 'PUT') {
+                    $allow[] = 'PUT';
+                    goto not_workoutcrud_update;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'workoutcrud_update')), array (  '_controller' => 'Schedule\\WorkoutBundle\\Controller\\WorkoutController::updateAction',));
+            }
+            not_workoutcrud_update:
+
+            // workoutcrud_delete
+            if (preg_match('#^/workout/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                if ($this->context->getMethod() != 'DELETE') {
+                    $allow[] = 'DELETE';
+                    goto not_workoutcrud_delete;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'workoutcrud_delete')), array (  '_controller' => 'Schedule\\WorkoutBundle\\Controller\\WorkoutController::deleteAction',));
+            }
+            not_workoutcrud_delete:
+
         }
 
         // _welcome

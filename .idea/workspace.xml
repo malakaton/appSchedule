@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1268ba01-a1a1-4b32-b8d6-505860c41bf2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerCompiler.log" beforeDir="false" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerCompiler.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" beforeDir="false" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/logs/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/app/logs/dev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Schedule/WorkoutBundle/Controller/DefaultController.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,13 +25,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Schedule/WorkoutBundle/Controller/DefaultController.php">
+        <entry file="file://$PROJECT_DIR$/src/Schedule/WorkoutBundle/Controller/WorkoutController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-              <folding>
-                <element signature="e#53#95#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -67,6 +62,15 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>index</find>
+      <find>workoutcrud</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -76,6 +80,7 @@
         <option value="$PROJECT_DIR$/src/Schedule/WorkoutBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Schedule/WorkoutBundle/Entity/Workout.php" />
         <option value="$PROJECT_DIR$/src/Schedule/WorkoutBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/Schedule/WorkoutBundle/Controller/WorkoutController.php" />
       </list>
     </option>
   </component>
@@ -144,6 +149,11 @@
             <path>
               <item name="appSchedule" type="b2602c69:ProjectViewProjectNode" />
               <item name="appSchedule" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="appSchedule" type="b2602c69:ProjectViewProjectNode" />
+              <item name="appSchedule" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -181,7 +191,24 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Schedule" type="462c0819:PsiDirectoryNode" />
               <item name="WorkoutBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="appSchedule" type="b2602c69:ProjectViewProjectNode" />
+              <item name="appSchedule" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Schedule" type="462c0819:PsiDirectoryNode" />
+              <item name="WorkoutBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="appSchedule" type="b2602c69:ProjectViewProjectNode" />
+              <item name="appSchedule" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Schedule" type="462c0819:PsiDirectoryNode" />
+              <item name="WorkoutBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="appSchedule" type="b2602c69:ProjectViewProjectNode" />
@@ -200,7 +227,7 @@
               <item name="WorkoutBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Default" type="462c0819:PsiDirectoryNode" />
+              <item name="Workout" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -209,6 +236,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -238,12 +266,12 @@
       <updated>1555175357790</updated>
       <workItem from="1555175358931" duration="443000" />
       <workItem from="1555201279744" duration="922000" />
-      <workItem from="1555239328307" duration="924000" />
+      <workItem from="1555239328307" duration="1550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2289000" />
+    <option name="totallyTimeSpent" value="2915000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="34" width="3440" height="1406" extended-state="6" />
@@ -305,10 +333,36 @@
     <entry file="file://$PROJECT_DIR$/src/Schedule/WorkoutBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
             <element signature="e#53#95#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Schedule/WorkoutBundle/Resources/views/Workout/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Schedule/WorkoutBundle/Resources/config/services.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Schedule/WorkoutBundle/Form/WorkoutType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Schedule/WorkoutBundle/Resources/views/Workout/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Schedule/WorkoutBundle/Controller/WorkoutController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
         </state>
       </provider>
     </entry>
