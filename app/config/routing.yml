@@ -1,0 +1,5 @@
+schedule_workout:
+    resource: "@ScheduleWorkoutBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
